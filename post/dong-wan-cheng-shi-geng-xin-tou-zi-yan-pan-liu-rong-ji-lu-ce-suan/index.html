@@ -1,98 +1,105 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>东莞城市更新投资研判(六) : 容积率测算 | 张二的歪理</title>
-<link rel="shortcut icon" href="https://boke.github.io/favicon.ico?v=1648691285795">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://boke.github.io/favicon.ico?v=1648691410260">
 <link rel="stylesheet" href="https://boke.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="东莞城市更新投资研判(六) : 容积率测算 | 张二的歪理 - Atom Feed" href="https://boke.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
     <meta name="description" content="重头好戏来啦，有读者私我说想要看容积率计算的内容，这就来啦！
 容积率计算是建立再前面3个小节分析结果的基础上，深化计算项目的可开发强度，也就是计算到底能建多少建筑面积，决定了项目的可售货值。
 说个题外话，我刚参加工作那一会，网上查资料学习投..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <meta name="keywords" content="城市更新" />
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://boke.github.io">
-  <img class="avatar" src="https://boke.github.io/images/avatar.png?v=1648691285795" alt="">
-  </a>
-  <h1 class="site-title">
-    张二的歪理
-  </h1>
-  <p class="site-description">
-    路漫漫其修远兮~共进步
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://boke.github.io">
+        <img src="https://boke.github.io/images/avatar.png?v=1648691410260" class="site-logo">
+        <h1 class="site-title">张二的歪理</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      路漫漫其修远兮~共进步
+    </div>
+    <div class="site-footer">
+      未完待续~~ | <a class="rss" href="https://boke.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              东莞城市更新投资研判(六) : 容积率测算
-            </h2>
-            <div class="post-info">
-              <span>
-                2022-03-31
-              </span>
-              <span>
-                9 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">东莞城市更新投资研判(六) : 容积率测算</h2>
+            <div class="post-date">2022-03-31</div>
             
-              <img class="post-feature-image" src="https://pica.zhimg.com/v2-cf762089d9c07771dd22ef994a128ea6_1440w.jpg?source=172ae18b" alt="">
+              <div class="feature-container" style="background-image: url('https://pica.zhimg.com/v2-cf762089d9c07771dd22ef994a128ea6_1440w.jpg?source=172ae18b')">
+              </div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>重头好戏来啦，有读者私我说想要看容积率计算的内容，这就来啦！</p>
+            <div class="post-content" v-pre>
+              <p>重头好戏来啦，有读者私我说想要看容积率计算的内容，这就来啦！</p>
 <p>容积率计算是建立再前面3个小节分析结果的基础上，深化计算项目的可开发强度，也就是计算到底能建多少建筑面积，决定了项目的可售货值。</p>
 <p>说个题外话，我刚参加工作那一会，网上查资料学习投资拓展岗位的知识，看到比较多的词汇是勾地、收并购、市调、强排、尽调、测算、上会等，也算是涵盖了房地产开发多数流程方面了，但这其实还是存在很大缺陷的，就是缺少 <strong>土地 与 规划</strong> 两大方面，然而这两大方面的知识却是城市更新业务不可或缺的，可惜网上却少有讲述。</p>
 <p>现在想一想，其实充斥网络的地产投资相关的文章知识，大都是由从事 招拍挂和收购勾地 的同行人员撰写的，这一类业务的本质上都是土地二级开发，土地是净地可直接开发、用地规划条件已明确。而城市更新是具有土地一级开发性质的，地上建筑物拆除、土地权属性质整理、用地规划需编制文件上报审批，比起招拍挂勾地收并购，算是复杂许多了。</p>
@@ -156,86 +163,53 @@
 <p>下节开始全新的章节，关于拆迁补偿方面。</p>
 <p>完，下节见。</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#1-%E5%9F%BA%E7%A1%80%E5%AE%B9%E7%A7%AF"><strong>1 基础容积</strong></a></li>
-<li><a href="#2-%E5%A5%96%E5%8A%B1%E5%BB%BA%E7%AD%91%E9%9D%A2%E7%A7%AF"><strong>2 奖励建筑面积</strong></a></li>
-<li><a href="#3-%E8%A1%A5%E5%81%BF%E5%BB%BA%E7%AD%91%E9%9D%A2%E7%A7%AF"><strong>3 补偿建筑面积</strong></a></li>
-<li><a href="#4-%E5%AE%B9%E7%A7%AF%E7%8E%87%E6%A0%A1%E6%A0%B8"><strong>4 容积率校核</strong></a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
             </div>
-          </article>
-        </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://boke.github.io/tag/WNxV6OddS/" class="tag">
+                    城市更新
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://boke.github.io/post/dong-wan-cheng-shi-geng-xin-tou-zi-yan-pan-qi-chai-qian-bu-chang-ji-za-tan/">
+                  <h3 class="post-title">
+                    东莞城市更新投资研判(七) : 拆迁补偿及杂谈
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://boke.github.io/post/dong-wan-cheng-shi-geng-xin-tou-zi-yan-pan-qi-chai-qian-bu-chang-ji-za-tan/">
-              <h3 class="post-title">
-                东莞城市更新投资研判(七) : 拆迁补偿及杂谈
-              </h3>
-            </a>
+            
+
           </div>
-        
 
-        
-
-        <div class="site-footer">
-  ~~未完待续
-  <a class="rss" href="https://boke.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+AOS.init();
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+</script>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
+
+
+
   </body>
 </html>
