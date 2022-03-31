@@ -1,106 +1,105 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>东莞城市更新投资研判(二) | 张二的歪理</title>
+<meta name="description" content="路漫漫其修远兮~共进步">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://boke.github.io/favicon.ico?v=1648691556513">
+<link rel="shortcut icon" href="https://boke.github.io/favicon.ico?v=1648691620248">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://boke.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="上一节讲了一下项目概况以及建筑与土地的问题，这一节就继续往下。
-2 立项分析
-立项可行性分析主要探讨分析项目是否能开展城市更新，是否符合最基本的政策要求。当然符合了立项标准还远远不够，后续还需要规划分析，立项只是最基础的一步。
-这里有个细节..." />
-    <meta name="keywords" content="城市更新" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://boke.github.io">
-        <img src="https://boke.github.io/images/avatar.png?v=1648691556513" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://boke.github.io">
+        <img class="avatar" src="https://boke.github.io/images/avatar.png?v=1648691620248" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://boke.github.io">
         <h1 class="site-title">张二的歪理</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
         
-          <a href="post/about" class="site-nav">
+          <a href="post/about" class="menu purple-link">
             关于
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      路漫漫其修远兮~共进步
-    </div>
-    <div class="site-footer">
-      未完待续~~ | <a class="rss" href="https://boke.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">东莞城市更新投资研判(二)</h2>
-            <div class="post-date">2022-03-31</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://pic1.zhimg.com/v2-091e7430ac78b909dcd72e64e0e089aa_1440w.jpg?source=172ae18b')">
+            </div>
+          
+          <h2 class="post-title">东莞城市更新投资研判(二)</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-03-31</span>
             
-              <div class="feature-container" style="background-image: url('https://pic1.zhimg.com/v2-091e7430ac78b909dcd72e64e0e089aa_1440w.jpg?source=172ae18b')">
-              </div>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://boke.github.io/tag/WNxV6OddS/">
+                    城市更新
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content" v-pre>
-              <p>上一节讲了一下项目概况以及建筑与土地的问题，这一节就继续往下。</p>
+          </div>
+          <div class="post-content">
+            <p>上一节讲了一下项目概况以及建筑与土地的问题，这一节就继续往下。</p>
 <h2 id="2-立项分析">2 立项分析</h2>
 <p>立项可行性分析主要探讨分析项目是否能开展城市更新，是否符合最基本的政策要求。当然符合了立项标准还远远不够，后续还需要规划分析，立项只是最基础的一步。</p>
 <p>这里有个细节问题要先说清楚：<strong>立项分析</strong>与<strong>前期服务商招引的前置条件</strong>的区别。东莞的城市更新政策流程中是没有明确的所谓立项阶段，只有前期服务商招引与单元划定阶段。（采用立项分析只是习惯性沿用了深圳流程）</p>
@@ -152,39 +151,45 @@
 <p>回顾一下重点：<strong>土规、建成时间、更新改造区、单元范围与边界</strong>。</p>
 <p>tips：如有错误、纰漏还望各位指正。</p>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://boke.github.io/tag/WNxV6OddS/" class="tag">
-                    城市更新
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://boke.github.io/post/dong-wan-cheng-shi-geng-xin-tou-zi-yan-pan-san-gui-hua-fen-xi/">
-                  <h3 class="post-title">
-                    东莞城市更新投资研判(三) : 规划分析
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://boke.github.io/post/dong-wan-cheng-shi-geng-xin-tou-zi-yan-pan-san-gui-hua-fen-xi/">
+              <h3 class="post-title">
+                下一篇：东莞城市更新投资研判(三) : 规划分析
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">路漫漫其修远兮~共进步</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  未完待续~~ | <a class="rss" href="https://boke.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -194,8 +199,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
